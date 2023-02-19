@@ -4,7 +4,7 @@ import '../componentsCSS/HeaderComp.css'
 const LogoComp = (props) => {
     return (
         <div className='logo_container'>
-            <a className='logo_link' href='home' >
+            <a className='logo_link' href='https://crypto-demo-app-olumidemichaelojo.netlify.app/' >
             <div className='logo_icon'></div>
             <span className='logo_name'>
                 <span className='my_logo_name'>JMM</span> 

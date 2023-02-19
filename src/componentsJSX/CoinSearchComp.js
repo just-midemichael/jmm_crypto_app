@@ -6,7 +6,7 @@ function CoinSearchComp({searchCoin}) {
 
     return (
         <div className='coin_search_container'>
-            <input id='input_search' className='coin_search' type='text' placeholder='search coin...e.g bitcoin' onChange={(e) => searchCoin(e.target.value)}/>
+            <input id='input_search' className='coin_search' type='text' placeholder='search coin...e.g bitcoin,' onChange={(e) => searchCoin(e.target.value)}/>
         </div>
     );
 }

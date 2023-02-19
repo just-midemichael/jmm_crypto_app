@@ -35,9 +35,7 @@ function MarketDataComp(props) {
     const filterCoin = listOfCoins.filter((coin) => {
         const coinSearchInput = document.getElementById('input_search');
         const marketContainer = document.getElementById('market_data_container');
-        const coinPrice = document.getElementsByClassName('coin_price')
-
-        
+                
         const inputChange = () => {
             if( coinSearchInput.value !== '') {
                 marketContainer.style.border = '1px solid gold';

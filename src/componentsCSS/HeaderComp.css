@@ -1,0 +1,375 @@
+.section_one {
+    background: linear-gradient( #020419, #1922d4 );
+    width: 100%;
+    height: 55vh;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header_container {
+    /* border: 2px solid gold; */
+    z-index: 1;
+    width: 100%;
+    max-width: 2200px;
+    height: 70px;
+    margin: 0;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+@media (max-width: 1000px) {
+    .section_one {
+        min-height: 250px;
+    }
+    .header_container {
+        padding: 10px 20px;
+        height: 60px;
+    }
+}
+@media (max-width: 400px) {
+    .header_container {
+        padding: 5px 10px;
+        height: 50px;
+    }
+}
+@media (max-width: 270px) {
+    .section_one {
+        min-height: 150px;
+    }
+    .header_container {
+        padding: 1px;
+        display: grid;
+        justify-content: center;
+        position: relative;
+    }
+}
+
+
+
+
+
+/************* LOGO STYLING *************/
+.logo_container {
+    height: 100%;
+    width: 90%;
+    max-width: 350px;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+.logo_icon {
+    box-sizing: border-box;
+    width: 10%;
+    min-width: 60px;
+    height: 100%;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+    background-image: url(../componentsLOGO/logo_crypto_demo_1.png);
+    transition: ease-in-out 400ms 100ms;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 2px solid white; */
+}
+.logo_container:hover .logo_icon {
+    background-image: url(../componentsLOGO/logo_crypto_demo_2.png);
+    transition: ease-in 400ms 100ms;
+}
+.logo_name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    cursor: pointer;
+    color: inherit;
+    /* border: 2px solid green; */
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: inherit;
+    font-weight: bolder;
+}
+.my_logo_name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: teal;
+}
+.logo_link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1000px) {
+    .logo_container {
+        max-width: 300px;
+        font-size: 1.0em;
+    }
+    .logo_icon {
+        min-width: 50px;
+    }
+    .logo_name {
+        padding: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .logo_container {
+        max-width: 260px;
+        font-size: 0.9em;
+    }
+    .logo_icon {
+        min-width: 40px;
+    }
+    .logo_name {
+        padding: 5px;
+    }
+}
+@media (max-width: 270px) {
+    .logo_container {
+        font-size: 0.8em;
+        width: 100%;
+    }
+    .logo_icon {
+        min-width: 30px;
+    }
+}
+
+
+
+
+
+/********** HAMBURGER STYLING ************/
+.hamburger_section {
+    display: none;
+    width: 10%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+}
+.hamburger_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    /* border: 2px solid red; */
+    height: 100%;
+    max-height: 40px;
+    width: 100%;
+    max-width: 80px;
+    font-size: 0.65em;
+    cursor: not-allowed;
+}
+.hamburger_container .box {
+    background-color: white;
+    height: 3.5px;
+    width: 35px;
+    border-radius: 10px;
+}
+.hamburger_container .box_1 {
+    border-radius: 10px 10px 0 0;
+}
+.hamburger_container .box_2 {
+    background-color: transparent;
+    height: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+}
+.hamburger_container .box_3 {
+    border-radius: 0 0 10px 10px;
+}
+@media (max-width: 1000px ) {
+    .hamburger_section {
+        display: flex;
+    }
+}
+@media (max-width: 400px ) {
+    .hamburger_section {
+        width: 12.5%;
+    }
+    .hamburger_container {
+        font-size: 0.55em;
+
+    }
+    .hamburger_container .box {
+        height: 3px;
+        width: 30px;
+    }
+    .hamburger_container .box_2 {
+        height: 10px;
+        width: 30px;
+    }
+}
+@media (max-width: 270px) {
+    .hamburger_container {
+        font-size: 0.4em;
+    }
+    .hamburger_container .box {
+        height: 2px;
+        width: 25px;
+    }
+    .hamburger_container .box_2 {
+        height: 10px;
+        width: 25px;
+    }
+}
+
+
+
+
+
+
+
+.background_coin_container {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.background_coin {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    max-height: 60px;
+    min-width: 60px;
+    height: 60px;
+    margin: 10px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 3;
+    transition: ease-in-out 1000ms 0ms;
+    transform: rotate(-360deg);
+    border: 2px solid rgb(29, 28, 28);
+    font-size: 0.7em;
+}
+.coin_1 {
+    transform: translateX(-100%) translateY(20%);
+    transition: ease-in-out 1500ms 0ms;
+    background-image: url(../componentsImage/coin_1_btc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_1:hover {
+    transform: translateY(-20%) skew(180deg, 200deg);
+    transition: ease-in-out 1500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_2 {
+    transform: translateX(-10%) translateY(0%) rotate3d(-360deg);
+    transition: ease-in-out 1000ms 0ms;
+    background-image: url(../componentsImage/coin_2_eth.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_2:hover {
+    transform: translateY(-20%) skew(-180deg, -200deg);
+    transition: ease-in-out 1000ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_3 {
+    transform: translateX(10%) translateY(30%);
+    transition: ease-in-out 1500ms 0ms;
+    background-image: url(../componentsImage/coin_3_usdt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_3:hover {
+    transform: translateY(-20%) skew(180deg, 200deg);
+    transition: ease-in-out 1500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_4 {
+    transform: translateX(50%) translateY(-35%);
+    transition: ease-in-out 1500ms 0ms;
+    background-image: url(../componentsImage/coin_4_xrp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_4:hover {
+    transform: translateY(-20%) skew(-180deg, -200deg);
+    transition: ease-in-out 1500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_5 {
+    transform: translateX(80%) translateY(-80%);
+    transition: ease-in-out 1500ms 0ms;
+    background-image: url(../componentsImage/coin_5_bnb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_5:hover {
+    transform: translateY(-90%) skew(180deg, 200deg);
+    transition: ease-in-out 1500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_6 {
+    transform: translateX(200%) translateY(0%);
+    transition: ease-in-out 2500ms 0ms;
+    background-image: url(../componentsImage/coin_6_matic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_6:hover {
+    transform: translateY(-20%) skew(-180deg, -200deg);
+    transition: ease-in-out 2500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+.coin_7 {
+    transform: translateX(80%) translateY(-90%);
+    transition: ease-in-out 1500ms 0ms;
+    background-image: url(../componentsImage/coin_7_usdc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin_7:hover {
+    transform: translateY(-100%) skew(180deg, 200deg);
+    transition: ease-in-out 1500ms 0ms;
+    border: 2px solid white;
+    color: white;
+}
+@media (max-width: 1000px ) {
+    
+}

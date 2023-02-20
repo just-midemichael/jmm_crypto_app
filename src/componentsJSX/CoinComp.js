@@ -28,7 +28,7 @@ function CoinComp({coins, loading, error}) {
                             <td>
                                 <span className='coin_icon_container'>
                                     <img className='coin_icon' src={coin.icon} alt='coin_icon'/>
-                                    {coin.name} 
+                                    {coin.id.toUpperCase()} 
                                 </span>
                             </td>
                             <td>{coin.symbol}</td>

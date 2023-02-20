@@ -33,7 +33,7 @@ function CoinComp({coins, loading, error}) {
                             </td>
                             <td>{coin.symbol}</td>
                             <td className='coin_marketcap'>{coin.marketCap}</td>
-                            <td className='coin_price'>{coin.price}</td>
+                            <td className='coin_price'>{coin.price} ($)</td>
                             <td className='coin_volume'>{coin.volume}</td>
                             <td className='extra_coin_data'>{coin.priceChange1d}</td>
                             <td className='extra_coin_data'>{coin.priceChange1h}</td>

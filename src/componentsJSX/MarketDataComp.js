@@ -40,12 +40,12 @@ function MarketDataComp(props) {
             if( coinSearchInput.value !== '') {
                 marketContainer.style.border = '1px solid gold';
 
-                return coin.name.includes(searchCoin.toLocaleLowerCase())
+                return coin.name.includes(searchCoin.toLowerCase())
             }
             else {
                 marketContainer.style.border = '1px solid transparent';
 
-                return coin.name.includes(searchCoin.toLocaleLowerCase())
+                return coin.name.includes(searchCoin.toLowerCase())
             }
         }
 
